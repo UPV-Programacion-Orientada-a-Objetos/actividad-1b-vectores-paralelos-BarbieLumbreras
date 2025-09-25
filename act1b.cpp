@@ -84,7 +84,7 @@ int main() {
 
                 for (int i = 0; i < 5; i++) {
                     if (codigo[i] == c) {
-                        cout << "Ingrese la cantidad a sumar/restar (puede ser negativa): ";
+                        cout << "Ingrese la cantidad a sumar/restar: ";
                         int cambio;
                         cin >> cambio;
                         if (cantidad[i] + cambio >= 0) { // Validamos que no quede negativo
@@ -114,7 +114,7 @@ int main() {
                 }
                 break;
 
-            case 4:
+            case 4: {
                 // Mostrar el producto con el precio más alto
                 float mayorPrecio = precio[0];
                 int indiceMayor = 0;
@@ -130,6 +130,7 @@ int main() {
                 cout << "Precio unitario: $" << precio[indiceMayor] << "\n";
                 cout << "Cantidad en inventario: " << cantidad[indiceMayor] << "\n";
                 break;
+            }
 
             case 5:
                 cout << "Saliendooooo\n";
